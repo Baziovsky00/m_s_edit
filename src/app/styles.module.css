@@ -1,0 +1,94 @@
+.page {
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.video {
+    object-fit: cover;
+}
+
+.page h1 {
+    text-align: center;
+    z-index: 5;
+    color: white;
+    position: absolute;
+    top: 350px;
+    font-size: 3.8em;
+    font-weight: 700;
+    left: 0px;
+    right: 0px;
+    animation: 1s ease-in-out h1Animation;
+    transition: 1s ease-in-out;
+}
+
+.h1Active {
+    top: 30px !important;
+}
+
+.page h2 {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    bottom: 10px;
+    font-size: 2em;
+
+    z-index: 5;
+    color: white;
+    animation: 1s ease-in-out h2Animation;
+    font-weight: 700;
+}
+
+.videoMainWrapper {
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    right: 0px;
+    margin-inline: auto;
+    max-width: 1200px;
+    height: 600px;
+    padding-inline: 10px;
+}
+
+.videoMain {
+    height: 100% !important;
+}
+
+.customPlayButton {
+    height: 600px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .videoMainWrapper {
+        top: 200px;
+    }
+    
+    .videoMainWrapper {
+        height: 250px;
+    }
+}
+
+@keyframes h1Animation {
+    0% {
+        font-size: 2em;
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    100% {
+        font-size: 3.8em;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes h2Animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
