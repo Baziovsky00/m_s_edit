@@ -35,7 +35,7 @@ export default function Home() {
             <div className={styles.videoMainWrapper}>
               <ReactPlayer
                 className={styles.videoMain}
-                src="https://www.youtube.com/watch?v=pXdagO33j_w"
+                src="https://vimeo.com/1102549929?share=copy"
                 playing={isPlaying}
                 width="100%"
                 height="auto"
